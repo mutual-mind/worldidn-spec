@@ -1,0 +1,9 @@
+type: object
+title: Validation Oracle
+properties:
+  oracle_id: { type: string }
+  axiom_verified: { type: string }
+  method_uri: { type: string }
+  trust_score: { type: number }
+  issued_claims: { type: array, items: { type: object } }
+required: [oracle_id, axiom_verified, issued_claims]

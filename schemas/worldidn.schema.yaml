@@ -1,0 +1,9 @@
+type: object
+title: WorldIDᴺ
+properties:
+  uid: { type: string }
+  memory_root: { type: array, items: { type: string } }
+  intention_trace: { type: array, items: { type: string } }
+  relation_links: { type: array, items: { type: string } }
+  symbolic_core: { type: array, items: { type: string } }
+required: [uid, memory_root, intention_trace, relation_links, symbolic_core]

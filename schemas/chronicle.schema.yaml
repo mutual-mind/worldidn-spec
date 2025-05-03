@@ -1,0 +1,12 @@
+type: array
+title: Chronicle Log
+items:
+  type: object
+  properties:
+    timestamp: { type: string, format: date-time }
+    event_type: { type: string }
+    agent: { type: string }
+    description: { type: string }
+    delta: { type: object }
+    integrity: { type: object }
+  required: [timestamp, event_type, agent, description, integrity]
